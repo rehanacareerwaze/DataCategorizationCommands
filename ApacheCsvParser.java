@@ -10,19 +10,26 @@ import org.apache.commons.csv.CSVRecord;
 public class ApacheCsvParser {
     PrintStream out;
 
+    private String domainString;
+    private String domainVar;
+    private String subDomainString;
+    private String subDomainVar;
+    private String skillString;
+    private String skillVar;
+
     public void parse(String inFileName, String outFileName)
             throws IOException {
+
         out = new PrintStream(new FileOutputStream(outFileName));
 
         Reader in = new FileReader(inFileName);
         Iterable<CSVRecord> records = CSVFormat.EXCEL.parse(in);
-        String lastDomain = null;
-        String lastSubDomain = null;
 
         for (CSVRecord record : records) {
             String domain = record.get(0);
             String subDomain = record.get(1);
             String skill = record.get(2);
+
 
             if (!isBlank(domain) && !isBlank(subDomain) && !isBlank(skill)) {
                 // Heading.  Ignore.
@@ -30,49 +37,64 @@ public class ApacheCsvParser {
             }
 
             if (!isBlank(domain)) {
-                printDomain(domain);
-                lastDomain = domain;
+                if (!isBlank(domainVar)) {
+                    printMatch();
+                }
+                domainString = domain;
+                domainVar = valueToName(domain);
+                printDomain();
             } else if (!isBlank(subDomain)) {
-                printSubDomain(lastDomain, subDomain);
-                lastSubDomain = subDomain;
+                subDomainString = subDomain;
+                subDomainVar = valueToName(subDomain);
+                printSubDomain();
             }  else if (!isBlank(skill)) {
-                printSkill(lastSubDomain, skill);
+                skillString = skill;
+                skillVar = valueToName(skill);
+                printSkill();
             }
         }
+        if (!isBlank(domainVar)) {
+            printMatch();
+        }
+
         in.close();
 
     }
 
     private boolean isBlank(String s) {
-        return s == null || s.trim().isEmpty();
+        if (s == null) {
+            return true;
+        }
+        String trimmed = s.trim();
+        return  trimmed.isEmpty() || trimmed.equals("-");
     }
 
-    private void printDomain(String domain) {
-        out.printf("CREATE (n:Domain { name : '%s', type : 'Technology', "
-                + "visible : 'True'})\n", domain);
-        out.println("RETURN n\n");
+    private void printDomain() {
+        out.printf("\nCREATE (%s:Domain { name : '%s', type : 'Technology', "
+                + "visible : 'True'}),\n", domainVar, domainString);
     }
 
-    private void printSubDomain(String domain, String subDomain) {
-        out.printf("CREATE (n:SubDomain { name : '%s', type : 'Technology', "
-                + "visible : 'True'})\n", subDomain);
-        out.println("RETURN n\n");
-        out.println("MATCH (a:Domain),(b:SubDomain)");
-        out.printf("WHERE a.name = '%s' AND b.name = '%s'\n", domain,
-                subDomain);
-        out.println("CREATE (a)-[r:SubDomain]->(b)");
-        out.println("RETURN r\n");
+    private void printSubDomain() {
+        out.printf("\nCREATE (%s:SubDomain { name : '%s', type : 'Technology', "
+                + "visible : 'True'}),\n", subDomainVar, subDomainString);
+        out.printf("(%s)-[:SubDomain]->(%s),\n", domainVar, subDomainVar);
     }
 
-    private void printSkill(String subDomain, String skills) {
-        out.printf("CREATE (n:Skill { name : '%s', type : 'Software Package', "
-                + "visible : 'True'})\n", subDomain);
-        out.println("RETURN n\n");
-        out.println("MATCH (a:SubDomain),(b:Skill)");
-        out.printf("WHERE a.name = '%s' AND b.name = '%s'\n", subDomain,
-                skills);
-        out.println("CREATE (a)-[r:Skill]->(b)");
-        out.println("RETURN r\n");
+    private void printSkill() {
+        out.printf("(%s:Skill { name : '%s'}),\n", skillVar, skillString);
+        out.printf("(%s)-[:Skill]->(%s),\n", subDomainVar, skillVar);
+    }
+
+    private void printMatch()  {
+        out.printf("\nMATCH (domain:Domain {name: '%s'})\n", domainString);
+        out.println("OPTIONAL MATCH (domain)-[:SubDomain]->(subdomain:SubDomain)");
+        out.println("OPTIONAL MATCH (subdomain)-[:Skill]->(skill:Skill)");
+        out.println("RETURN domain, subdomain, skill;");
+
+    }
+
+    private String valueToName(String s) {
+        return s.replaceAll("[^a-zA-Z0-9]+", "");
     }
 
     public static void main(String[] args)
@@ -81,3 +103,5 @@ public class ApacheCsvParser {
         parser.parse(args[0], args[1]);
     }
 }
+
+
