@@ -1,0 +1,929 @@
+﻿<START:skill> CREATE  <END> (n:Domain { name : 'AI', type : 'Technology', visible : 'True'})
+RETURN n
+
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Machine Learning', type : 'Technology', visible : 'True'})
+RETURN n
+
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'AI' AND b.name = 'Machine Learning'
+
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Natural Langauge Processing', type : 'Technology', visible : 'True'})
+RETURN n
+
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'AI' AND b.name = 'Natural Langauge Processing'
+
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Deep Learning', type : 'Technology', visible : 'True'})
+RETURN n
+
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'AI' AND b.name = 'Deep Learning'
+
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Cognitive Computing', type : 'Technology', visible : 'True'})
+RETURN n
+
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'AI' AND b.name = 'Cognitive Computing'
+
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Object Recognition', type : 'Technology', visible : 'True'})
+RETURN n
+
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'AI' AND b.name = 'Object Recognition'
+
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Expert Systems', type : 'Technology', visible : 'True'})
+RETURN n
+
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'AI' AND b.name = 'Expert Systems'
+
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Graph Databases', type : 'Technology', visible : 'True'})
+RETURN n
+
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'AI' AND b.name = 'Graph Databases'
+
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Intelligent Agents', type : 'Technology', visible : 'True'})
+RETURN n
+
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'AI' AND b.name = 'Intelligent Agents'
+
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Machine Learning Algorithms', type : 'Technology', visible : 'True'})
+RETURN n
+
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'AI' AND b.name = 'Machine Learning Algorithms'
+
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:Domain { name : 'IoT', type : 'Technology', visible : 'True'})
+RETURN n
+
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Open Hardware - Microcontrollers for IoT', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'IoT' AND b.name = 'Open Hardware - Microcontrollers for IoT'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Programming Microcontrollers', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'IoT' AND b.name = 'Programming Microcontrollers'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Embedded OS for IoT', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'IoT' AND b.name = 'Embedded OS for IoT'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'IoT Infrastructure & Cloud Development Platforms', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'IoT' AND b.name = 'IoT Infrastructure & Cloud Development Platforms'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Open Source IoT Platforms', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'IoT' AND b.name = 'Open Source IoT Platforms'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'DIY Platforms', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'IoT' AND b.name = 'DIY Platforms'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Hardware /Sensor First Platforms', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'IoT' AND b.name = 'Hardware /Sensor First Platforms'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Connectivity Driven Platforms', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'IoT' AND b.name = 'Connectivity Driven Platforms'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Wireless Protocol for IoT', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'IoT' AND b.name = 'Wireless Protocol for IoT'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:Domain { name : 'QA Automation', type : 'Technology', visible : 'True'})
+RETURN n
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Web Automation', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'QA Automation' AND b.name = 'Web Automation'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'GUI Based Automation', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'QA Automation' AND b.name = 'GUI Based Automation'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Mobile Automation', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'QA Automation' AND b.name = 'Mobile Automation'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Test Case Management', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'QA Automation' AND b.name = 'Test Case Management'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Bug Tracking Tools', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'QA Automation' AND b.name = 'Bug Tracking Tools'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Unit Testing Frameworks', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'QA Automation' AND b.name = 'Unit Testing Frameworks'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Load Testing', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'QA Automation' AND b.name = 'Load Testing'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Test Case Writing', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'QA Automation' AND b.name = 'Test Case Writing'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Popular Programming languages for QA', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'QA Automation' AND b.name = 'Popular Programming languages for QA'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Misc Skills for QA', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'QA Automation' AND b.name = 'Misc Skills for QA'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Automated API testing', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'QA Automation' AND b.name = 'Automated API testing'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:Domain { name : 'DevOps', type : 'Technology', visible : 'True'})
+RETURN n
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Containers', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'DevOps' AND b.name = 'Containers'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Configuration Management (CM)', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'DevOps' AND b.name = 'Configuration Management (CM)'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Continuous Integration (CI)', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'DevOps' AND b.name = 'Continuous Integration (CI)'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Application Performance Management (APM)', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'DevOps' AND b.name = 'Application Performance Management (APM)'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:Domain { name : 'Web Development', type : 'Technology', visible : 'True'})
+RETURN n
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Web Application Frameworks', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Web Development' AND b.name = 'Web Application Frameworks'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Java Script Server Side Frameworks', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Web Development' AND b.name = 'Java Script Server Side Frameworks'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'HTML 5 and CSS', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Web Development' AND b.name = 'HTML 5 and CSS'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'JavaScript Web Application Tools', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Web Development' AND b.name = 'JavaScript Web Application Tools'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:Domain { name : 'Leadership', type : 'Technology', visible : 'True'})
+RETURN n
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Core Skills for Executive Leadership', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Leadership' AND b.name = 'Core Skills for Executive Leadership'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Core Skills for All Managers', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Leadership' AND b.name = 'Core Skills for All Managers'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:Domain { name : 'Cloud', type : 'Technology', visible : 'True'})
+RETURN n
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Cloud Platforms', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Cloud' AND b.name = 'Cloud Platforms'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Function As a Service', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Cloud' AND b.name = 'Function As a Service'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Cloud Security', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Cloud' AND b.name = 'Cloud Security'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:Domain { name : 'Mobile', type : 'Technology', visible : 'True'})
+RETURN n
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Programming Languages', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Mobile' AND b.name = 'Programming Languages'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Mobile OS', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Mobile' AND b.name = 'Mobile OS'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Mobile Platforms', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Mobile' AND b.name = 'Mobile Platforms'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:Domain { name : 'BigData', type : 'Technology', visible : 'True'})
+RETURN n
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Apache Hadoop Stack', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'BigData' AND b.name = 'Apache Hadoop Stack'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Hadoop Platforms', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'BigData' AND b.name = 'Hadoop Platforms'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'NoSQL Column Store Databases', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'BigData' AND b.name = 'NoSQL Column Store Databases'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'NoSQL Document Store Databases', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'BigData' AND b.name = 'NoSQL Document Store Databases'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'NoSQL Graph Databases', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'BigData' AND b.name = 'NoSQL Graph Databases'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'NoSQL Key-Value Store Databases', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'BigData' AND b.name = 'NoSQL Key-Value Store Databases'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'NoSQL Time Series Databases', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'BigData' AND b.name = 'NoSQL Time Series Databases'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'In Memory Databases', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'BigData' AND b.name = 'In Memory Databases'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Predictive Analytics', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'BigData' AND b.name = 'Predictive Analytics'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Data Virtualization', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'BigData' AND b.name = 'Data Virtualization'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Data Visualization', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'BigData' AND b.name = 'Data Visualization'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'BigData Search & Knowledge Discovery', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'BigData' AND b.name = 'BigData Search & Knowledge Discovery'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:Domain { name : 'Customer Experience Management', type : 'Technology', visible : 'True'})
+RETURN n
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Leadership and Customer Experience', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Customer Experience Management' AND b.name = 'Leadership and Customer Experience'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Compelling Brand Values', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Customer Experience Management' AND b.name = 'Compelling Brand Values'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Employee Engagement', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Customer Experience Management' AND b.name = 'Employee Engagement'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Customer Connectedness', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Customer Experience Management' AND b.name = 'Customer Connectedness'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Customer Service Vs Customer Experience', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Customer Experience Management' AND b.name = 'Customer Service Vs Customer Experience'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Essential Customer Service Skills ( Use this query on youtube : customer service skills for success enterprises)', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Customer Experience Management' AND b.name = 'Essential Customer Service Skills ( Use this query on youtube : customer service skills for success enterprises)'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Customer loyalty management', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Customer Experience Management' AND b.name = 'Customer loyalty management'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Social media as a customer service tool', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Customer Experience Management' AND b.name = 'Social media as a customer service tool'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:Domain { name : 'Digital Marketing Solutions', type : 'Technology', visible : 'True'})
+RETURN n
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Digital Content Creation', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Digital Content Creation'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Website Design', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Website Design'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Online Brand Positioning', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Online Brand Positioning'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Social Media Marketing Strategies', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Social Media Marketing Strategies'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Marketing Analytics', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Marketing Analytics'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Monitoring and Dashboard', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Monitoring and Dashboard'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Email Marketing', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Email Marketing'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Marketing Automation', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Marketing Automation'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Hubspot', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Hubspot'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Hootsuite', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Hootsuite'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Marketo', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Marketo'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Canva', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Canva'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Evernote', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Evernote'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'SurveyMonkey', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'SurveyMonkey'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'MailChimp', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'MailChimp'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Rapportive', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Rapportive'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Sniply', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Sniply'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Google Analytics', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Google Analytics'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Search Engine Optimization ( SEO)', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Search Engine Optimization ( SEO)'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Search Engine Marketing ( SEM)', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Search Engine Marketing ( SEM)'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Demand Generation', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Demand Generation'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Lead Generation', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Lead Generation'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Affiliate Marketing', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Affiliate Marketing'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Public Relations', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Public Relations'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Growth Hacking', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Growth Hacking'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Video and Mobile Marketing', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Digital Marketing Solutions' AND b.name = 'Video and Mobile Marketing'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:Domain { name : 'Sales & BD', type : 'Technology', visible : 'True'})
+RETURN n
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Effective Sales Management', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Sales & BD' AND b.name = 'Effective Sales Management'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Sales Prospecting', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Sales & BD' AND b.name = 'Sales Prospecting'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Sales Closing', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Sales & BD' AND b.name = 'Sales Closing'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Communication and Listening Skills', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Sales & BD' AND b.name = 'Communication and Listening Skills'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Presentation Skills', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Sales & BD' AND b.name = 'Presentation Skills'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Sales Terminology', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Sales & BD' AND b.name = 'Sales Terminology'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Business Development Strategies', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Sales & BD' AND b.name = 'Business Development Strategies'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Challenges in Selling', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Sales & BD' AND b.name = 'Challenges in Selling'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Psychology of Selling', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Sales & BD' AND b.name = 'Psychology of Selling'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Building Customer Loyalty', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Sales & BD' AND b.name = 'Building Customer Loyalty'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Writing Sales Copy', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Sales & BD' AND b.name = 'Writing Sales Copy'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Sales Pipeline Management', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Sales & BD' AND b.name = 'Sales Pipeline Management'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Sales CRM Tools', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Sales & BD' AND b.name = 'Sales CRM Tools'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Sales Cloud by SalesForce', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Sales & BD' AND b.name = 'Sales Cloud by SalesForce'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'NetSuite CRM', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Sales & BD' AND b.name = 'NetSuite CRM'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'CallidusCloud', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Sales & BD' AND b.name = 'CallidusCloud'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+<START:skill> CREATE  <END> (n:SubDomain { name : 'Sales Productivity Tools', type : 'Technology', visible : 'True'})
+RETURN n
+
+MATCH (a:Domain),(b:SubDomain)
+WHERE a.name = 'Sales & BD' AND b.name = 'Sales Productivity Tools'
+<START:skill> CREATE  <END> (a)-[r:SubDomain]->(b)
+RETURN r
+
+
